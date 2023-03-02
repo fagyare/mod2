@@ -1,41 +1,34 @@
-import  { useState } from "react";
+// import  { useState } from "react";
 
 
-function SearchWeather(){
-    // let [imput, setInput] = useState();
-    let [data, setData] = useState();
+function SearchWeather({weather}){
+    // let [temp, ] = useState(location.temp);
+    // let temp = location.main.temp
 
-    
-    // function handleChange(e){
-    //     setInput(e.target.value)
-    // }
+    // console.log(location.weather[0].icon);
+    console.log(weather.main.temp);
 
-
-
-    async function getWeather(){
-        let key = "process.env.API_WEATHER_KEY"
-        let url = `http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=${key}`
-
-        try {
-            let response = await fetch(url)
-            let data = await response.json()
-            setData(data)
-            let url = data.current
-
-        } catch (error) {
-            console.log('error')
-            
-        }
-
-    }
+//     function temperatureConverter(num) {
+//         num = parseFloat(num);
+//         return ((num-273.15)*1.8)+32;
+        
+//       } 
+// let num2 = {location.main.temp}
+//        num2 =  ((num2-273.15)*1.8)+32;
+// 275-273.15 *1.8 + 32 = 35.33 
 
 
     return (
-        <div>
-            {data}
-            <h1> getWeather {getWeather}</h1>
-            {/* <input value={input} onChange={handleChange} /> */}
-            {/* <button onClick={Search}> Search </button> */}
+        <div className="search-weather">
+            <h2>Current Weather: {((((parseFloat(weather.main.temp-273.18)*1.8)+32).toFixed())) } &#8451; </h2>
+            <p>Current Location: {weather.name}</p>
+            <h4>Real feel: {((((parseFloat(weather.main.feels_like-273.18)*1.8)+32).toFixed())) } &#8451; </h4>
+            <p>Humidity: {weather.main.humidity}</p>
+            {/* change Kelvin to Celsius & give user option to change */}
+            <p>Clouds: {weather.weather[0].main}</p>
+            <p>Weather description: {weather.weather[0].description}</p>
+            {/* {temperatureConverter} */}
+            {/* <h1> getWeather {getWeather}</h1> */}
         </div>
     );
 }
