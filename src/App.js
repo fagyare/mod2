@@ -10,6 +10,9 @@ import  { useState } from "react";
 import RandomWeather from "./components/RandomWeather"
 import HistoricalWeather from './components/HistoricalWeather';
 import Contacts from './pages/Contacts';
+import Forecast from "./components/Forecast";
+
+
 
 function App() {
 
@@ -52,13 +55,14 @@ function handleChange(e){
       <button onClick={getWeather}> Search </button>
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/About" element={<About />} />
+      <Route path="About" element={<About />} />
+      <Route path="Forecast" element={<Forecast />} />
       <Route path="/Random" element={<RandomWeather />} />
       <Route path="Historical" element={<HistoricalWeather />} />
       {/* <Route path="Historical" element={<HistoricalWeather />} /> */}
 
       </Routes>
-
+      
       {data1 && <SearchWeather weather={data1}/> }
       </div> 
       <Footer /> 

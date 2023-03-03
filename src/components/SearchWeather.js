@@ -20,7 +20,7 @@ function SearchWeather({weather}){
 
     return (
         <div className="search-weather">
-            <h2>Current Weather: {((((parseFloat(weather.main.temp-273.18)*1.8)+32).toFixed())) } &#8451; </h2>
+            <h1> {((((parseFloat(weather.main.temp-273.18)*1.8)+32).toFixed())) } &#8451; </h1>
             <p>Current Location: {weather.name}</p>
             <h4>Real feel: {((((parseFloat(weather.main.feels_like-273.18)*1.8)+32).toFixed())) } &#8451; </h4>
             <p>Humidity: {weather.main.humidity}</p>

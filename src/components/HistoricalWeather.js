@@ -4,8 +4,10 @@ function HistoricalWeather (){
 
       <div>
       <p>Historical Weather Report</p> 
-       
-      <img src="/weather-forecast.gif" alt="Hostorical Forecast"/>
+
+      <img src="/Historical.png" alt="Hostorical Forecast"/>
+      
+      <img src="/weather.png" alt="Hostory"/>
 
       </div>
       );
