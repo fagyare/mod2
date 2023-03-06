@@ -82,6 +82,7 @@ h2{
     font-size: 18px;
     font-weight: 400;
     border-radius: 8px;
+    box-shadow: rgb(208, 208, 196);
 }
 
 .footer {
@@ -104,6 +105,7 @@ footer a {
 .search{
   background:hsl(45, 81%, 53%);
   margin: 30px;
+  border-radius: 20px;
 
 }
 .input-btn {
