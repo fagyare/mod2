@@ -1,35 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+function Forecast() {
 
-function Forecast () {
+    let [forecast, setForecast] = useState(null);
+    let url = `https://api.openweathermap.org/data/2.5/forecast/daily?q=newyork&cnt=6&appid=f2955663debb66831c20addbd14c738`
 
-    let [forecast, setForecast] = useState({});
-    let url = `api.openweathermap.org/data/2.5/forecast/daily?q=${forecast}&appid=f799f8912929b70d50f5271d4c903276`
-
-    async function Fetchforecast (){
+    const fetchforecast = async () => {
         try {
         let response = await fetch(url);
         let data = await response.json();
         console.log(data)
-        console.log(forecast)
         setForecast(data)
+        console.log(forecast)
+
         } catch (error){
             console.log(error);
-
         }
-
     }
     
-function handleChange(e){
-    setForecast(e.target.value)
-  }
+    const handleChange = (e) => setForecast(e.target.value);
   
-    
+    useEffect(() => {
+        // Assuming you know the state
+
+        // NICE TO HAVE == GET USER LOCATION VIA PERMISSOINS
+
+
+            // IN CASE USER DENIES LOCATION PERMISSION == SHOW DEFAULT STATE (NY)
+
+        (async () => fetchforecast())()
+    }, [])
+
     return (
 
         <div>
 
         <input className='input' type="text" placeholder='Enter City Name' onChange={handleChange} />
-        <button onClick={Forecast}> Search </button>
+        <button onClick={fetchforecast}> Search </button>
 
 
         </div>

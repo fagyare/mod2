@@ -9,7 +9,9 @@ function Nav() {
       <Link className="link" to="Forecast">Forecast</Link>
       <Link className="link"to="Historical">Historical Weather</Link>
       <Link className="link"to="Random">Random Weather</Link>
-      <Link className="link"to="/https://openweathermap.org/api/history-forecast-bulk" target={"_blank"}> Historic Weather</Link>
+      {/* <Link className="link"to="/https://openweathermap.org/api/history-forecast-bulk" target={"_blank"}> Historic Weather</Link> */}
+      <Link className="link" to="Contacts">Contact Us</Link>
+      {/* <Contacts />  */}
 
     </nav>
     </div>

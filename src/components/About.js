@@ -1,7 +1,7 @@
 
 function About() {
     return (
-<div className="section-container">
+<div className="about">
 
 
 <p>Our site provides historical, current and forecasted weather data for each point on the globe.</p>

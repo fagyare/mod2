@@ -8,13 +8,18 @@
 .main-body {
   min-height: 70vh;
 
-
 }
 
 
 body {
+  background-image: url("../public/cloud.jpg");
+  background-color: #01579b;
   position:static;
-  color:  hsl(45, 81%, 53%);
+  /* color:  hsl(45, 81%, 53%); */
+  color: #fd8f00;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   /* background-image: url("../public/weather.jpg"); */
   
   margin: 0;
@@ -31,7 +36,9 @@ code {
 }
 
 .nav {
-  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../public/sunsett.jpg");  display: flex;
   justify-content: center;
   background-color: #01579b;
   border-radius: 10px;
@@ -43,22 +50,19 @@ code {
 
 .link{
   color: white;
-   margin: 15px;
+  margin: 15px;
+   
 }
 
 h2{
+  font-size: 50px;
+  color: #fff;
   border-radius: 10px;
-  background-color: #01579b;
+  text-shadow: 1px 3px #000;
+  /* background-color: #3b5967; */
 
 }
 
-input {
-  background: #fff3;
-  border: 0;
-  border-radius: 20px;
-  padding: 5px 6px;
-  text-align: center;
-}
 
 button {
   background:whitesmoke;
@@ -71,24 +75,73 @@ button {
   background-color: rgb(194, 152, 98);
   background-image: url("../public/weather.jpg");
   padding: 20px;
-  margin: 50px;
+  margin: 50px auto;
   max-width: 200px;
-     color: pink;
-    font-family: 'Recursive', sans-serif;
+  color: white;
+    /* font-family: 'Recursive', sans-serif; */
     font-size: 18px;
     font-weight: 400;
+    border-radius: 8px;
 }
 
 .footer {
   /* position: absolute; */
-  bottom: 0;
-  display: inline-block;
-  text-align: center;
-  border-top: 2px solid #01579b;
-  margin: 50px;
-
+    bottom: 0;
+    display: inline-block;
+    text-align: center;
+    border-top: 2px solid #bd8944;
+    padding: 10px;
+    background-color: #0157AE;
+    width: calc(100% - 20px);
+    color: white;
+    font-size: 12px;
 }
 
+footer a {
+  color: lightgray;
+}
+
+.search{
+  background:hsl(45, 81%, 53%);
+  margin: 30px;
+
+}
+.input-btn {
+  background:whitesmoke;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px 6px;
+  text-align: center;
+  
+}
+
+.contacts {
+ margin-top: 90px;
+}
+
+.contacts input {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.contacts textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.contacts button {
+  width: 300px;
+  height: 40px;
+  background: green;
+  color: white;
+  text-transform: capitalize;
+  margin-top: 8px;
+}
+
+.about {
+  color: whitesmoke;
+}
 /* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
