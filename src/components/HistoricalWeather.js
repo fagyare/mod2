@@ -3,7 +3,7 @@ function HistoricalWeather (){
       return (
 
       <div>
-      <p>Historical Weather Report</p> 
+      <h3>Historical Weather Report</h3> 
 
       <img src="/Historical.png" alt="Hostorical Forecast"/>
       

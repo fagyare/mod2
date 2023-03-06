@@ -3,6 +3,8 @@ function About() {
     return (
 <div className="about">
 
+    <h3 className="about-us">About Us</h3>
+
 
 <p>Our site provides historical, current and forecasted weather data for each point on the globe.</p>
 <p><b>Forecast by every minute</b></p>

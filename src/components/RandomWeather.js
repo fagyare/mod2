@@ -1,7 +1,7 @@
 function RandonWeather (){
     return (
         <div>
-        <h1>Random Weather</h1>
+        <h3>Random Weather</h3>
 
         <img src="/weather-forecast.gif" alt="Random Weather"/>
 

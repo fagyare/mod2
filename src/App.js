@@ -4,7 +4,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav"
-import Header from './components/Header';
+import Header from './pages/Header';
 import SearchWeather from './components/SearchWeather';
 import  { useState, useEffect } from "react";
 import RandomWeather from "./components/RandomWeather"

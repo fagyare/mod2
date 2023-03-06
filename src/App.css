@@ -64,7 +64,7 @@ h2{
 }
 
 
-button {
+.button {
   background:whitesmoke;
   border: 0;
   border-radius: 20px;
@@ -141,6 +141,10 @@ footer a {
 
 .about {
   color: whitesmoke;
+}
+
+.about-us{
+  color: hsl(45, 81%, 53%);
 }
 /* 
 @media (prefers-reduced-motion: no-preference) {
